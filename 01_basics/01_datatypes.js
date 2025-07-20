@@ -24,6 +24,8 @@ console.log(typeof "ravina");
 console.log();
 console.log(typeof null);
 
+console.log();
+
 
 // code => readable + future proof 
 
