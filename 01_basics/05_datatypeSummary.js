@@ -29,4 +29,32 @@ const myFunction  = function(){
 
     console.log("hello world")
 
-1}
+}
+
+// memory - stack and heap memory 
+
+// stack - primitive data type - copy of value 
+// heap  - non-primitive data type - reference (original value )
+
+let myName = "ravina";
+let mySecondName = myName;
+ mySecondName = "chotuu";
+
+
+
+console.log(myName);
+console.log(mySecondName);
+
+let userOne = {
+    email : "ravina@gmail.com",
+    upi : "user@okioki"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "ravina2003@gmail.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
