@@ -36,9 +36,41 @@ let numberInString = String(numberValue);
 let value = undefined;
 
 let valueInBoolean = Boolean(value);
-console.log(valueInBoolean);
+// console.log(valueInBoolean);
 
 // "ravina" => true, 5 => true, "" => false, undefined => false
+
+// -----------------Operations --------------------------------------------------------------------------------------------------------
+
+
+// console.log(2+2);
+// console.log(3-3);
+// console.log(2/3);
+// console.log(3%2);
+
+
+let str1 = "ravina";
+let str2 = " bisht";
+
+let str3 = str1+str2;
+// console.log(str1+str2);
+
+console.log(1+2+"2");
+console.log("1"+2+2);
+
+console.log((2+3)*3/2);
+
+console.log(+true);
+
+let numValue = 3;
+console.log(numValue++);
+console.log(++numValue);
+
+let num1, num2, num3;
+
+num1=num2=num3=2+2;
+
+
 
 
 
