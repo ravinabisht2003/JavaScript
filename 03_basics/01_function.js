@@ -77,7 +77,59 @@ const logInUserB = logInUserNameB("Ira");
 // const logInUserB = logInUserNameB("");
 // const logInUserB = logInUserNameB();
 
-console.log(logInUserB);
+// console.log(logInUserB);
+
+//Function With array and object parameter
+
+// Rest Operator
+
+function calculatorCartPrice(...num1){
+    return num1;
+}
+
+
+// function calculatorCartPrice(val1,val2,...num1){
+//     return num1;
+// }
+
+
+// function calculatorCartPrice(...num1,val1,val2){
+//     return num1;
+// } Not Possible 
+
+console.log(calculatorCartPrice(2000,5000,6000,7000));
+
+// Object parameter in function 
+
+const user ={
+    userName:"Ira",
+    price : 199
+}
+
+function handleObject(anyObject){
+    console.log(`username is ${anyObject.userName} and price is ${anyObject.price}`);
+}
+
+// handleObject(user);
+
+handleObject({
+    userName:"aarav",
+    price:399
+})
+
+// array parameter in function 
+
+const myNewArray = [6,6,2,0,0,2];
+
+function returnSecondValue(getArray){
+    // return getArray;
+    return getArray[1];
+}
+
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([1,2,2,2,0,0,4]));
+
+
 
 
 
