@@ -4,12 +4,49 @@
     <meta charset="UTF-8">
     
     <title>DOM Learning</title>
+
+    <style>
+        .heading{
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
-<body>
+<body  class="heading">
     <div class="bg-black">
-        <h1 id= "title" class="heading">DOM learning on chai and code</h1>
+        <h1 id= "title">DOM learning on chai and code</h1>
         <p>Lorem ipsum dolor sit amet.</p>
+
+        <ul>
+            <li class="temp-item">one</li>
+            <li class="temp-item">two</li>
+            <li class="temp-item">three</li>
+            <li class="temp-item">four</li>
+        </ul>
 
     </div>
 </body>
 </html>
+
+<!-- 
+
+
+const title = document.getElementById('title')
+title.id
+title.class
+title.className
+title.getAttribute('id')
+title.getAttribute('class')
+title.setAttribute('class','text')
+title.style.backgroundColor='green'
+title.style.padding='15px'
+title.style.borderRadius='15px'
+title.textContent
+title.innerHTML
+title.innerText
+document.querySelector('h1')
+document.querySelector('#title')
+document.querySelector('heading')
+
+
+ -->

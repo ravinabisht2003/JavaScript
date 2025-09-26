@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white;">
+ 
+    
+</body>
+
+     <script>
+        const divV = document.createElement('div');
+        console.log(divV); 
+        divV.className = "main";
+        divV.id = Math.random()* 10+1;
+
+        // Custom Attribute
+
+        divV.setAttribute("title","generated titel");
+                divV.style.padding="12px";
+
+        divV.innerText="ravina";
+        // Its override the value
+
+        const addText = document.createTextNode("Ravina");
+        divV.appendChild(addText);
+
+        // Add the text in div, but did not override it
+
+        document.body.appendChild(divV);
+
+        // this will move it to the end of the body.
+
+
+
+     </script>
+</html>
