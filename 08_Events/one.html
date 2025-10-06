@@ -28,15 +28,31 @@
     // }
 
     //attachEvent()--use for run the run the web on internet exploral
-    //jQuery - on (just like node js in back time)
+    //jQuery - on event listner(just like node js in back time)
 
     document.getElementById('owl').addEventListener('click', function(){
         alert("owl clicked again")
     }, false)
 
-    //False - is default
+    //False - is default and some function not work without it
     //read 
-    //type, timeStamp, defaultPreveted
+    //type, timeStamp, defaultPreveted (we can change the default behaviour of any thing and stop the default navigation)
+    //target, toElement, srcElement, currentTarget
+    //clientX, clientY,screenX, screenY
+    //altkey, ctrlKey, shiftKey, keyCode
+    // brower event & environment event (where the mouse click etc.)
+
+
+    //Event Propogation has two concept
+    // In market mostly should default which is False which is Event Bubbling
+    // Its depend on use case
+    //1. Event Bubbling  - In that the event goes from bottom to top so it will go first child then parent  
+    //2. Event Capturing - up to down 
+    // Stop propogation - it will not go in the upper element after the propogate
+
+
+
+    
 
 </script>
 </html>
