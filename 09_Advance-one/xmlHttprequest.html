@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        color: white;
+    }
+</style>
+
+<body>
+    <div style="padding: 10px;">
+        <span>User Name : </span>
+        <span class="user-name"></span>
+    </div>
+
+    <div style="padding: 10px;">
+        <span>Bio : </span>
+        <Span class="user-bio"></Span>
+    </div>
+
+    <div style="padding: 10px;">
+        <span>Public Repositories Count : </span>
+        <span class="user-publresp"></span>
+    </div>
+
+    <button style="width: 150px; height: 30px; margin: 20px;">Load Data</button>
+</body>
+
+<script>
+    const requestURL = 'https://api.github.com/users/hiteshchoudhary';
+    const name = document.getElementsByClassName('user-name');
+    const bio = document.getElementsByClassName('user-bio');
+    const publicRepo = document.getElementsByClassName('user-publresp');
+    const button = document.querySelector('button');
+
+    let  isDataVisible = false;
+
+
+    button.addEventListener('click', function () {
+        
+
+        if (isDataVisible) {
+
+            name[0].textContent = '';
+            bio[0].textContent = '';
+            publicRepo[0].textContent = '';
+            button.textContent = 'Load Data';
+            isDataVisible = false;
+
+        } else {
+
+            const xhr = new XMLHttpRequest();
+
+            xhr.open('GET', requestURL);
+
+            xhr.addEventListener('load', function () {
+                const Data = JSON.parse(this.responseText);
+                console.log(typeof Data);
+                name[0].textContent = Data.name;
+                bio[0].textContent = Data.bio;
+                publicRepo[0].textContent = Data.public_repos;
+                button.textContent = 'Remove Data';
+                isDataVisible = true;
+            })
+
+            xhr.send();
+        }
+    })
+
+
+
+
+
+
+</script>
+
+</html>
