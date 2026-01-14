@@ -5,6 +5,8 @@ let   accountEmail = "ravinabisht2003@gmail.com";
 var   accountPassword = "123456789";
 // outof scope and don't use that
 accountCity = "Jaiput";
+
+let a = 100;
 // don't use that
 let   accountState;
 
