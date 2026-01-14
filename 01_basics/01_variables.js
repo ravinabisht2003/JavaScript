@@ -6,7 +6,7 @@ var   accountPassword = "123456789";
 // outof scope and don't use that
 accountCity = "Jaiput";
 
-let a = 100;
+let a = 90;
 // don't use that
 let   accountState;
 
